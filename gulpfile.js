@@ -4,16 +4,17 @@ var babel = require('gulp-babel');
 
 var sass = require('gulp-sass');
 
-
 //es6 task, brah
-gulp.task('default', function() {
-  return gulp.src('src/test.js')
+gulp.task('babel', function() {
+  return gulp.src('src/**/*.js')
     .pipe(babel({
       presets: ['es2015']
     }))
     .pipe(gulp.dest('dist'));
-});
+    //use this for client-side javascript
+    // .pipe(gulp.dest('dist'));
 
+});
 
 //sass task
 gulp.task('sass', function () {
