@@ -1,7 +1,5 @@
 var gulp = require('gulp');
-
 var babel = require('gulp-babel');
-
 var sass = require('gulp-sass');
 
 //es6 task, brah
@@ -28,4 +26,3 @@ gulp.task('watch', function() {
 });
 
 gulp.task('dev', ['babel', 'sass', 'watch']);
-
