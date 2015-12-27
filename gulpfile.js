@@ -22,4 +22,9 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('public/css'));
 });
 
+gulp.task('watch', function() {
+  gulp.watch( 'src/**/*.js', ['babel']);
+});
+
 gulp.task('dev', ['babel', 'sass']);
+
