@@ -9,7 +9,7 @@ gulp.task('default', function() {
     }))
     .pipe(gulp.dest('dist'));
 });
-//es6 task
+//es6 task, brah
 
 
 
