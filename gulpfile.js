@@ -13,7 +13,6 @@ gulp.task('babel', function() {
     .pipe(gulp.dest('dist'));
     //use this for client-side javascript
     // .pipe(gulp.dest('dist'));
-
 });
 
 //sass task
@@ -22,3 +21,5 @@ gulp.task('sass', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('public/css'));
 });
+
+gulp.task('dev', ['babel', 'sass']);
